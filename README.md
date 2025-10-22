@@ -7,6 +7,11 @@ It predicts the likelihood of **Diabetes** and **Heart Disease** using user-inpu
 
 ---
 
+## 🔗 Deployment Link
+[https://health-guard.streamlit.app/](https://health-guard.streamlit.app/)
+
+---
+
 ## 🌟 Features
 
 ✅ **Diabetes Prediction** – based on glucose, BMI, insulin, etc.  
