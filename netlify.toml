@@ -1,0 +1,17 @@
+[build]
+  command = "pip install -r requirements.txt && streamlit run app.py --server.port $PORT --server.address 0.0.0.0"
+  publish = "."
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/streamlit-app"
+  status = 200
+
+[build.environment]
+  PYTHON_VERSION = "3.9"
+
+[[plugins]]
+  package = "netlify-plugin-python"
+
+[dev]
+  command = "streamlit run app.py"
