@@ -5,12 +5,12 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 
 # Set page configuration
-st.set_page_config(page_title="Health Assistant", layout="wide", page_icon="🧑‍⚕️")
+st.set_page_config(page_title="Health Assistant Model", layout="wide", page_icon="🧑‍⚕️")
 
 # Load models
 working_dir = os.path.dirname(os.path.abspath(__file__))
-diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
-heart_disease_model = pickle.load(open('heart_disease_model.sav', 'rb'))
+diabetes_model = pickle.load(open(os.path.join(working_dir, 'diabetes_model.sav'), 'rb'))
+heart_disease_model = pickle.load(open(os.path.join(working_dir, 'heart_disease_model.sav'), 'rb'))
 
 # Page Layout
 st.markdown("""
